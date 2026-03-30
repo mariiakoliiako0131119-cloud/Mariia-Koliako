@@ -128,6 +128,3 @@ get_orders(user2)
 
 
 
-
-
-

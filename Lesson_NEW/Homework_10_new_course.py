@@ -112,18 +112,11 @@ mock_source = MockDataSource()
 real_source = DictDataSource({"email": "user@test.com", "password": "qwerty"})
 mock_source = MockDataSource()
 print(prepare_login_data(real_source))
-# Keys: ['email', 'password'] - это печатается из prepare_login_data
-# {'email': 'user@test.com', 'password': 'qwerty'} - это возвращается
 print(prepare_login_data(mock_source))
-# Keys: ['email', 'password'] - это печатается из prepare_login_data
-# {'email': 'mock@test.com', 'password': '123456'} - это возвращается
 print(real_source.get_data())
-# {'email': 'user@test.com', 'password': 'qwerty'}
 print(mock_source.get_data())
-# {'email': 'mock@test.com', 'password': '123456'}
 upper_data = transform_data(mock_source.get_data)
 print(upper_data)
-# {'email': 'MOCK@TEST.COM', 'password': '123456'}
 
 from abc import abstractmethod
 from abc import ABC
@@ -167,15 +160,15 @@ checks = [
 ]
 
 results = run_checks(checks, response)
-print(results)   # [True, True, False]
+print(results)
 
 status_check = StatusCodeCheck(200)
 field_check_id = RequiredFieldCheck("id")
 field_check_email = RequiredFieldCheck("email")
 
-print(status_check.check(response)) # True
-print(field_check_id.check(response)) # True
-print(field_check_email.check(response)) # False
+print(status_check.check(response))
+print(field_check_id.check(response))
+print(field_check_email.check(response))
 
 
 

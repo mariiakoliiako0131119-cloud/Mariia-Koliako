@@ -1,6 +1,3 @@
-from tkinter import BaseWidget
-from wsgiref.validate import assert_
-
 import requests
 import random
 

@@ -1,4 +1,3 @@
-""" Задание 1 """
 
 # s = "Python для автоматизации"
 # print(s.upper())
@@ -10,9 +9,10 @@
 # print(msg.count("а", 3))
 
 """ Задание 3 """
-# msg = "абракадабра"
+msg = "абракадабра"
 # print(msg.find("ка"))
 # print(msg.find("а", -1))
+# print(msg.rfind('a')) # Последннее вхождение
 # print(msg.find("xyz",))
 
 """ Задание 4 """
@@ -36,12 +36,13 @@
 
 """ Задание 7 """
 # s = "яблоко, груша, банан"
-# apple, grusha, banan = s.split()
+# apple, grusha, banan = s.split(", ")
 # print(apple)
 # print(grusha)
 # print(banan)
-# s1= "Python;Java;C++" по ";" # НЕ ПОНИМАЮ ЗАДАНИЯ
-# Python, Java, C++ to = s1.split()
+# s1= "Python;Java;C++" # НЕ ПОНИМАЮ ЗАДАНИЯ
+# P, J, Cpp = s1.split(";")
+# print(P, J, Cpp)
 
 """ Задание 8 """
 # text3 = ["Привет", "мир", "!"]

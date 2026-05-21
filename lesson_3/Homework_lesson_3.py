@@ -1,5 +1,4 @@
 """ Задание 1 """
-from queue import PriorityQueue
 
 # print("Привет, мир!")
 # print(5, 10, 15)
@@ -57,8 +56,8 @@ from queue import PriorityQueue
 # y = 4.5
 # print(y <= 1 and y >= 10)
 # print(1 <= y >= 10)
-# print(0 >= y >= 5) or (10 >= y >= 15)
-# print(not(0 >= y >= 5) or (10 >= y >= 15))
+# print(0 >= y >= 5) or (10 <= y <= 15)
+# print(not(0 >= y >= 5) or (10 <= y <= 15))
 
 """ Задание 4 """
 
@@ -78,7 +77,7 @@ from queue import PriorityQueue
 # print(n == n / 3)
 
 """ Срезы - Задание 1 """
-s = "Программирование"
+# s = "Программирование"
 # print(s[0])
 # print(s[len(s) -1])
 # print(s[2])
@@ -105,14 +104,16 @@ s = "Программирование"
 # print(s[::-2])
 
 """ Задание 5 """
-# print(s[0]) у меня нет ошибки
-# s2 = "П"
+# s = "Программирование"
+# # s= s[0]
+# # print(s[0])
+# s2 = "п"
 # print(s2 + s[1:])
 
 """ Задание 6 """
-word = "abcdefgh"
-print(word[2:5])
-print(word[::-1])
-print(word[1:-1])
+# word = "abcdefgh"
+# print(word[2:5])
+# print(word[::-1])
+# print(word[1:-1])
 
 

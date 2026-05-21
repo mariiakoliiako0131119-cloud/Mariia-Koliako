@@ -1,7 +1,4 @@
-""" Задание 3 """
-from itertools import count
-from queue import PriorityQueue
-from xml.etree.ElementPath import prepare_parent
+""" Задание 1 """
 
 # a = 8
 # b = 3
@@ -85,7 +82,7 @@ from xml.etree.ElementPath import prepare_parent
 
 """ Задание 4 """
 # a = "Мария"
-# # b = (a + " ") * 5
+# b = (a + " ") * 5
 # c = (a + " ") * 2.5
 # print(b)
 
